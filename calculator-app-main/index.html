@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script defer src="index.js"></script>
+
+</head>
+<body class="body">
+  <div class="calculadora-divisao">
+    <div class="cabecalho-divisao">
+      calc
+      <label class="theme-title">Theme</label>
+      <div class="theme">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <div class="tw-toggle">
+          <input checked type="radio" name="toggle" value="1" onclick="themeChange('0')" class="input">
+          <label class="label" class="toggle toggle-yes">1</label>
+          <input type="radio" name="toggle" value="2" onclick="themeChange(1)" class="input">
+          <label class="label" class="toggle toggle-yes">2</label>
+          <input type="radio" name="toggle" value="3" onclick="themeChange(2)" class="input">
+          <label class="label" class="toggle toggle-yes">3</label>
+          <span></span>  
+        </div>
+      </div>
+    </div>
+    <form name="calculator" >
+      <div class="tela-divisao">
+        <input type="textfield" name="ans" value="" class="tela-conteudo">
+      </div>
+      <div class="botoes">
+        <p></p>
+        <div>&nbsp
+          <input type="button" value="7" onClick="document.calculator.ans.value+='7'" class="tipo1" name="7">
+          <input type="button" value="8" onClick="document.calculator.ans.value+='8'" class="tipo1" name="8">
+          <input type="button" value="9" onClick="document.calculator.ans.value+='9'" class="tipo1" name="9">
+          <input type="button" value="DEL" onClick="del()" class="tipo2" name="DEL" id="tipo1">
+        </div>
+        <div>&nbsp
+          <input type="button" value="4" onClick="document.calculator.ans.value+='4'" class="tipo1" name="4">
+          <input type="button" value="5" onClick="document.calculator.ans.value+='5'" class="tipo1" name="5">
+          <input type="button" value="6" onClick="document.calculator.ans.value+='6'" class="tipo1" name="6">
+          <input type="button" value="+" onClick="document.calculator.ans.value+='+'" class="tipo1" name="+">
+        </div>
+        <div>&nbsp
+          <input type="button" value="1" onClick="document.calculator.ans.value+='1'" class="tipo1" name="1">
+          <input type="button" value="2" onClick="document.calculator.ans.value+='2'" class="tipo1" name="2">
+          <input type="button" value="3" onClick="document.calculator.ans.value+='3'" class="tipo1" name="3">
+          <input type="button" value="-" onClick="document.calculator.ans.value+='-'" class="tipo1" name="-">
+        </div>
+        <div>&nbsp
+          <input type="button" value="." onClick="document.calculator.ans.value+='.'" class="tipo1" name=".">
+          <input type="button" value="0" onClick="document.calculator.ans.value+='0'" class="tipo1" name="0">
+          <input type="button" value="/" onClick="document.calculator.ans.value+='/'" class="tipo1" name="/">
+          <input type="button" value="x" onClick="document.calculator.ans.value+='*'" class="tipo1" name="x">
+        </div>
+        <div>&nbsp
+          <input type="reset" value="Reset" class="tipo2">
+          <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="tipo2" id="tipo2">
+        </div>
+        <p></p>
+      </div>
+    </form>
+</body>
+</html>

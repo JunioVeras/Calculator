@@ -1,0 +1,47 @@
+body{
+    background: hsl(0, 0%, 90%); 
+}
+.cabecalho-divisao{
+    color: black;
+}
+.theme-title{
+    color: black;
+}
+.tw-toggle{
+    background: hsl(0, 5%, 81%);
+}
+.tw-toggle label{
+    color: black;
+}
+.tw-toggle input[value="1"]:checked ~ span{
+    background:hsl(25, 98%, 40%);
+}
+.tw-toggle input[value="2"]:checked ~ span{
+    background:hsl(25, 98%, 40%);
+}
+.tw-toggle input[value="3"]:checked ~ span{
+    background:hsl(25, 98%, 40%);
+}
+.tela-conteudo{
+    background: hsl(0, 0%, 93%);
+    color: black;
+}
+.botoes{
+    background: hsl(0, 5%, 81%);
+    color: black;
+}
+.tipo1{
+    background: hsl(45, 7%, 89%);
+    color: black;
+    box-shadow: 0 5px hsl(35, 11%, 61%);;
+}
+.tipo2{
+    background: hsl(185, 42%, 37%);
+    color: hsl(30, 25%, 89%);
+    box-shadow: 0 5px hsl(185, 58%, 25%);
+}
+#tipo2{
+    background: hsl(25, 98%, 40%);
+    box-shadow: 0 5px hsl(25, 99%, 27%);
+    color: hsl(30, 25%, 89%);
+}
